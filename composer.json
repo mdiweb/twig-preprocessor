@@ -1,5 +1,5 @@
 {
-    "name": "tigr/twig-preprocessor",
+    "name": "mdiweb/twig-preprocessor",
     "type": "library",
     "description": "This very simple loader adds a way to pre parse twig files before loading them into twig parser",
     "authors": [
