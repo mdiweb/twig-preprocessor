@@ -41,7 +41,7 @@ class Twig_Loader_Preprocessor implements LoaderInterface
     /**
      * {@inheritdoc}
      */
-    public function getSourceContext(string $name): Source
+    public function getSourceContext($name)
     {
         $realSource = $this->realLoader->getSourceContext($name);
 
@@ -53,7 +53,7 @@ class Twig_Loader_Preprocessor implements LoaderInterface
     /**
      * {@inheritdoc}
      */
-    public function exists(string $name)
+    public function exists($name)
     {
         return $this->realLoader->exists((string)$name);
     }
@@ -61,7 +61,7 @@ class Twig_Loader_Preprocessor implements LoaderInterface
     /**
      * {@inheritdoc}
      */
-    public function getCacheKey(string $name): string
+    public function getCacheKey($name)
     {
         return $this->realLoader->getCacheKey($name);
     }
@@ -69,7 +69,7 @@ class Twig_Loader_Preprocessor implements LoaderInterface
     /**
      * {@inheritdoc}
      */
-    public function isFresh(string $name, int $time): bool
+    public function isFresh($name, $time)
     {
         return $this->realLoader->isFresh($name, $time);
     }
